@@ -1,0 +1,82 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="order.js"></script>
+</head>
+
+<body>
+    <!-- header  -->
+    <div class="page">
+        <header>
+
+        </header>
+        <!-- navbar -->
+        <div class="logo">
+            <a id="tittle" href="index.html">Ro Resturant</a>
+            <!-- right sidenavbar -->
+            <div class="navbar">
+                <span id="menu"><a href="index.html">Home</a></span>
+                <span id="menu"><a href="Menu.html">Menu</a></span>
+                <span id="menu"><a href="About.html">About</a></span>
+                <span id="menu"><a href="contact.html">Contact</a></span>
+                <span id="menu"><a href="order.html">Receipt</a></span>
+            </div>
+        </div>
+        <nav class="navorder">
+            <br><br><br>
+            <div class="customer"><br><br><br>
+                <h1 class="reciept">Receipt</h1><br>
+                <hr><br><br><br>
+                <div class="item">Customer Name </div><input type="text" id="nam"><br><br><br>
+                <div class="item">Phone Number </div><input type="text" id="num"><br><br><br><br>
+                <button id="myBtn" onclick="myFunction()">Add The Customer</button><br><br><br>
+                <hr><br><br>
+                <form id="f1">
+                    <div class="item">Product </div><input type="text" id="product"><br><br><br>
+                    <div class="item">Price</div> <input type="number" id="number"><br><br><br>
+                    <div class="item">Quantity </div><input type="number" id="quantity"><br><br><br>
+                </form>
+                <button id="btn" onclick="my()">Add The Product</button>
+
+
+
+            </div>
+        </nav>
+        <article class="articleorder">
+            <br><br><br>
+            <div class="resturant"><br><br><br>
+                <h1 class="reciept">Receipt</h1><br>
+                <hr><br><br><br>
+                <div class="item">Customer Name: <p id="demo"></p>
+                </div><br><br><br>
+                <div class="item"> Phone Number:<p id="dem"></p>
+                </div><br><br><br><br>
+                <table border="1" width="100%" id="mytable">
+                    <tr>
+                        <th style="background-color: rgb(233, 241, 181); font-weight: bolder;font-size: larger;">Product
+                        </th>
+                        <th style="background-color: rgb(233, 241, 181); font-weight: bolder;font-size: larger;">Price
+                        </th>
+                        <th style="background-color: rgb(233, 241, 181); font-weight: bolder;font-size: larger;">
+                            Quantity</th>
+                    </tr>
+                </table><br>
+                <div class="total">Total Price = </div>
+                <div id="taotalsal">0.00$</div>
+            </div>
+        </article>
+    </div>
+    </div>
+
+    <br><br><br><br><br>
+    <hr>
+    <!-- footer  -->
+    <footer>
+        <p>© Copyright 2023 . All rights reserved. • Privacy Policy</p>
+        <br>
+        <p>Site by arwa</p>
+    </footer>
+</body>
+
+</html>

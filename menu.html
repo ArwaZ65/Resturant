@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'all') {
+                    $('.itembox').show('1500');
+                }
+                else {
+                    $('.itembox').not('.' + value).hide('1500');
+                    $('.itembox').filter('.' + value).slideUp(2000).slideDown(2000);
+
+                }
+            })
+            // $('list').click(function () {
+            //     $(this).addClass('active').siblings().removeClass('active');
+            // })
+            $('.mnu img').click(function () {
+                $(this).css("opacity", "0.5").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '200px',
+                    width: '200px'
+                });
+
+            })
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+    </header>
+    <!-- navbar -->
+    <div class="page">
+        <div class="logo">
+            <a id="tittle" href="index.html">Ro Resturant</a>
+            <!-- right sidenavbar -->
+            <div class="navbar">
+                <span id="menu"><a href="index.html">Home</a></span>
+                <span id="menu"><a href="Menu.html">Menu</a></span>
+                <span id="menu"><a href="About.html">About</a></span>
+                <span id="menu"><a href="contact.html">Contact</a></span>
+                <span id="menu"><a href="order.html">Receipt</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- menu  -->
+    <section>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="pizza">Pizza</li>
+            <li class="list" data-filter="burger">Burger</li>
+            <li class="list" data-filter="nodels">Nodels</li>
+            <li class="list" data-filter="specialsandwich">Special Sandwich</li>
+            <li class="list" data-filter="dessert">Dessert</li>
+
+        </ul>
+    </section>
+    <div class="mnu">
+        <div class="first">
+            <img src="chicken-burger.jpeg" class="itembox burger"
+                style="margin-right: 60px;margin-left: 60px; margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="b7.jpg" class="itembox burger" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="b9.jpg" class="itembox burger" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="b1.jpg" class="itembox burger" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="b2jpg.jpg" class="itembox burger"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="b3jpg.jpg" class="itembox burger"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="b4.jpg" class="itembox burger" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="b5.jpg" class="itembox burger" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="b6.jpg" class="itembox burger" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="cheese-pizza.jpeg" class="itembox pizza"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="P1.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="p2.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="p3.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="p4.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="p5.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="p6.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="p7.jpg" class="itembox pizza" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="pizza.jpeg" class="itembox pizza"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="s2.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="s3.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="s4.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="s5.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="s6.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="s7.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="chessy-spagetti.jpeg" class="itembox nodels"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="meatball-spagetti.jpeg" class="itembox nodels"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="s1.jpg" class="itembox nodels" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="san1.jpg" class="itembox specialsandwich"
+                style="margin-right: 50px;margin-left: 50px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="san2.jpg" class="itembox specialsandwich"
+                style="margin-right: 50px;margin-left: 50px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="san3.jpg" class="itembox specialsandwich"
+                style="margin-right: 50px;margin-left: 50px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="san4.jpg" class="itembox specialsandwich"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="san5.jpg" class="itembox specialsandwich"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="san6.jpg" class="itembox specialsandwich"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="Foodshot_2016_07_4_small.jpg" class="itembox specialsandwich"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="Screen-Shot-2021-08-18-at-9.53.29-PM.png" class="itembox specialsandwich"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="tuscan-bread-salad.jpeg" class="itembox specialsandwich"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="d1.jpg" class="itembox dessert" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="d2.jpg" class="itembox dessert" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="d3.jpg" class="itembox dessert" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="d4.jpg" class="itembox dessert" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="d5.jpg" class="itembox dessert" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="d6.jpg" class="itembox dessert" style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="mnu">
+        <div class="first">
+            <img src="nutella-pizza.jpeg" class="itembox dessert"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="moka-crunsh-cakw.jpeg" class="itembox dessert"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+        <div class="sec">
+            <img src="jennifer-pallian.webp" class="itembox dessert"
+                style="margin-right: 60px;margin-left: 60px;margin-bottom: 30px;">
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <!-- footer  -->
+    <footer>
+        <p>© Copyright 2023 Rhiannon Navin. All rights reserved. • Privacy Policy</p>
+        <br>
+        <p>Site by arwa</p>
+    </footer>
+</body>
+
+</html>
